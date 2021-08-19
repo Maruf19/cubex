@@ -119,6 +119,13 @@
         margin-top: 60%;
      }
     
+    
+     .hero-text-box  .btn:link,
+     .hero-text-box  .btn:visited,
+     .hero-text-box .btn{
+         padding: .7rem 1.5rem ;
+     }
+    
     .contact-section form{
     margin-top: 5rem;
     width: 100%;
