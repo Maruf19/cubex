@@ -1,0 +1,667 @@
+/* =============== */
+/* BASIC SETUP */
+/* =============== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+body {
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+
+}
+
+ ul li{
+     list-style: none;
+ }
+
+
+/* ======Underline========= */
+hr{
+    width: 8.5rem;
+    height: 0.3rem;
+    overflow: visible;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: rgb(125, 140, 184);
+    border: .1rem royalblue;
+}
+
+/* =============== */
+/*heading*/
+/* =============== */
+h1{
+    font-size: 3.2rem;
+    color: #ffff;
+}
+
+:focus{
+    outline: 0;
+}
+/* =============== */
+/*Reusable Component */
+/* =============== */
+
+.row{
+    max-width: 114rem;
+    margin:0 auto;
+}
+
+section{
+    padding: 8rem 0;
+}
+
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+h3{
+
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h4{
+
+
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+
+
+}
+
+.box{
+    padding: 1%;
+}
+.box p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    color: #ffff;
+}
+
+/* ======description-Paragraph========= */
+.description{
+    font-size: 2.2rem;
+   width: 60%;
+   margin: auto;
+   line-height: 3rem;
+
+
+}
+
+
+
+
+
+
+/* ======BUTTON========= */
+.btn:link,
+.btn:visited,
+.btn{
+    background: #333;
+    border-bottom:0.3rem solid #0000;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 6rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+    margin-top: 4.5rem;
+    font-size: 1.6rem;
+
+}
+
+/* =============== */
+/* Header Section*/
+/* =============== */
+ 
+header{
+    background: linear-gradient(rgba(135, 80, 156, 0.9),rgba(135, 80, 156, 0.9)), url(img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 85vh;
+    position: relative;
+} 
+
+.logo{
+    height: 4.5rem;
+    width: auto;
+    margin-top: 1rem;
+    float: left;
+}
+
+
+/* =============== */
+/* Main Navigation */
+/* =============== */
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  padding:  0 0 1.5rem 0;
+  background: gray;
+ 
+
+
+}
+
+.main-nav {
+    float: right;
+    margin-top: 2rem;
+}
+
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 1rem;
+
+}
+
+.main-nav :first-child{
+    margin-left: 0rem;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* background: rgba(100, 58,121 0.3); */
+    padding: 0.3rem 1.6rem;
+    border-radius: 0.6rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    transition: 3s;
+}
+
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited {
+    background: rgb(26, 25, 25);
+
+}
+
+/* mobile-menu */
+
+.mobile-menu span{
+color: white;
+font-size: 4rem;
+float: right;
+margin-top: 2rem;
+display: none;
+}
+
+.mobile-menu span:hover{
+    cursor: pointer;
+}
+
+.overlay{
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+   
+}
+
+.overlay-content{
+    position:relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay a {
+    text-decoration: none;
+    display: block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:#fff;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.overlay a:hover{
+    color: #fff;
+}
+
+.closebtn{
+    position: absolute;
+    top: 2rem;
+    right: 4.5rem;
+    font-size: 6rem;
+}
+
+.hero-text-box{
+    margin-top: 20%;
+    width: 114rem;
+    text-align: center;
+}
+
+    
+.btn-hero:link,
+.btn-hero:visited{
+    margin-top: 1rem;
+    border-radius: 5px;
+    background: #eb7d4b;
+    border-color: #c86a60;
+}
+
+
+/* =============== */
+/* Services Section*/
+/* =============== */
+
+.services-section{
+    color: #ffff;
+    text-align: center;
+    background:linear-gradient(rgba(23, 194, 164, 0.95),rgba(23, 194, 164, 0.95)), url(img/services-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+
+.services-icon{
+    height: 12rem;
+    margin-top: 4.5rem;
+    margin-bottom:3.5rem ;
+}
+
+
+
+
+
+
+/* =============== */
+/*Team Section*/
+/* =============== */
+.team-section{
+    text-align: center;
+    background:linear-gradient(rgba(169, 169, 169, 0.9),rgba(169, 169, 169, 0.9)), url(img/team-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.team-section h2{
+    color: #27283d;
+}
+
+
+.team-member{
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+
+
+.role{
+    font-size: 1.5rem;
+    color: #095f7c;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+
+.team-section .box p {
+    color: #0c0c0c;
+
+}
+
+
+.social-link{
+    margin-top: 4.5rem;
+}
+
+
+.social-link ul li{
+    display: inline-block;
+    margin: .5rem;
+    font-size: medium;
+
+}
+.social-link ul li a{
+    color: #ffff;
+}
+
+.social-link ul li a:link i::before{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color:#0c0c0c;
+    display: inline-block;
+    padding: 1rem;
+    transition: .5s;
+
+}
+
+.social-link ul li a:hover i::before{
+    background: #393939;
+    transform: rotate(360deg);
+
+}
+
+
+
+/* =============== */
+/*Skill Section*/
+/* =============== */
+
+
+/* Animated Circle */
+
+svg.radial-progress {
+    height: auto;
+    max-width: 200px;
+    padding: 1em;
+    transform: rotate(-90deg);
+    width: 100%;
+  }
+  
+  svg.radial-progress circle {
+    fill: rgba(0,0,0,0);
+    stroke: #fff;
+    stroke-dashoffset: 219.91148575129; 
+    stroke-width: 10;
+  }
+  
+  svg.radial-progress circle.incomplete { opacity: 0.25; }
+  
+  svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+  
+  svg.radial-progress text {
+    fill: #fff;
+    text-anchor: middle;
+  }
+
+
+.skill-section{
+    text-align: center;
+    background: linear-gradient(rgba(238, 233, 233, 0.8),rgba(238, 233, 233, 0.8)), url(img/skill-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.skill-section .box{
+    margin-top: 4.5rem;
+
+}
+
+svg.radial-progress circle{
+    stroke-width: 5;
+
+
+}
+
+svg.radial-progress text{
+    fill: #393939;
+    font-size: 1.5rem;
+
+}
+
+svg.web-design circle{
+    stroke: rgb(9, 82, 104);
+}
+
+
+svg.html-css circle{
+    stroke: rgba(85, 6, 85, 1);
+}
+
+
+svg.graphic-design circle{
+    stroke: rgba(12, 49, 129, 0.658);
+}
+
+
+svg.ui-ux circle{
+    stroke: rgba(255, 0, 0, 0.63);
+}
+
+
+/* =============== */
+/* Services Section*/
+/* =============== */
+
+.portfolio-section{
+    text-align: center;
+    background: linear-gradient(rgba(182, 125, 85, 0.822),rgba(182, 125, 85, 0.822)), url(img/portfolio-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    background-attachment: fixed;
+    
+}
+
+.portfolio-section .box{
+    margin-top: 4.5rem;
+
+}
+.portfolio-section h4{
+    margin-top: 2.5rem;
+}
+
+.portfolio-filter{
+    margin: 4.5rem;
+}
+
+.portfolio-filter button{
+    background: rgb(221, 114, 27);
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: .5rem;
+    color: #0c0c0c;
+    text-transform: uppercase;
+    margin: 0.5rem;
+}
+
+
+.portfolio-filter button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 1);
+}
+
+.portfolio-img{
+    width: 80%;
+    height: auto;
+}
+
+.portfolio-section .btn-load-more{
+
+    background-color: rgba(9, 116, 165, 0.842);
+    border-color: darkgreen;
+}
+
+
+.portfolio-section .mixitup-control-active{
+    background-color: #ffff;
+}
+
+
+
+
+
+/* =============== */
+/* testimonial Section*/
+/* =============== */
+
+.testimonial-section{
+    background:  linear-gradient(rgba(233, 31, 31, 0.815),rgba(233, 31, 31, 0.815)), url(img/testimonial-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+.testimonial-section .description{
+    text-align: center;
+}
+
+.testimonial-section .col:nth-child(3){
+    margin-left: 0px;
+}
+
+.testimonial-section .col:nth-child(1),
+.testimonial-section .col:nth-child(2){
+    margin-top: 4rem;
+
+}
+
+.client-photo{
+    width: 10rem;
+    float: left;
+}
+
+.client-photo img
+{
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.client-testimonial{
+    width: 31rem;
+    height: 15rem;
+    float: left;
+}
+
+.client-testimonial p{
+    font-style: italic;
+    font-size: 1.8rem;
+    height:5rem;
+}
+
+.testimonial-section h3{
+    margin-top: 2rem;
+}
+
+.testimonial-section .role{
+    margin-top: 0rem;
+    font-size: 1.2rem;
+    color: #ffff;
+}
+
+
+
+/* =============== */
+/*Contact Section*/
+/* =============== */
+
+
+.contact-section{
+    text-align: center;
+    background: linear-gradient(rgba(60, 83, 153, 0.8), rgba(60, 83, 153, 0.8)), url(img/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.contact-section .description{
+    color: #fff;
+}
+.contact-section form{
+    margin-top: 5rem;
+    width: 70%;
+    margin: auto;
+}
+
+.contact-section label{
+    font-size: 2rem;
+    float: left;
+    color: white;
+    opacity: 1;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea{
+
+    background: #52535559;
+    border: .5rem solid #273a71;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    margin: .5rem 0rem;
+
+
+}
+.contact-section form ::placeholder{
+    color: violet;
+    opacity: 1;
+}
+
+.btn-submit{
+    border: 0;
+    border-bottom: .3rem solid #299ec5;
+    background: #30bae7;
+}
+
+ .contact-section .btn-submit:hover{
+    cursor: pointer;
+}
+
+
+/* =============== */
+/*Footer Section*/
+/* =============== */
+
+footer{
+    background: #344b8e;
+    padding: .3rem 0;
+    border-top: .1rem solid rgba(255, 255, 255, 0.801);
+}
+
+footer li{
+    display: inline-block;
+    font-size: 2rem;
+    margin: 1rem;
+}
+footer ul li:nth-child(8){
+    float: right;
+    
+}
+
+
+footer li a {
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+
+}
+
+
+
+footer li:hover a{
+    color:#30bae7 ;
+}

@@ -1,0 +1,160 @@
+@media only screen and (max-width: 1200px){
+    header{
+        height: 65vh;
+    }
+    
+    .logo{
+        height: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .mobile-menu span{
+        display: block;
+    }
+    .row{
+        margin: 0 20px;
+    }
+
+    .logo{
+            height: 5rem;
+            margin-top: 2rem;
+        }
+    
+    .main-nav{
+      display: none;
+    }
+    
+    html{
+        font-size: 57.5%;
+    }
+
+
+
+.client-photo{
+    width: 100%;
+    float: none;
+    text-align: center;
+}
+
+
+
+.client-testimonial{
+    width: 100%;
+    float: none;
+    text-align: center;
+
+}
+
+.portfolio-section .row{
+    margin: 0%;
+}
+
+.hero-text-box{
+    width: 100%;
+}
+
+
+}
+
+ 
+
+
+
+
+@media only screen and (max-width: 980px){
+
+/* 
+    .html{
+        font-weight: 62.5%;
+    }
+    */
+    .hero-text-box{ 
+        width: 100%;
+    }
+    .span_1_of_4{
+        width: 49.2%;
+
+    }
+
+    .span_1_of_4:nth-child(3){
+        margin:0;
+    }
+
+    .team-section .box:nth-child(4){
+        margin:0;
+    }
+
+    .skill-section .box:nth-child(4){
+        margin:0;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .description{
+       width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px){
+    h2{
+        font-size: 20px ;
+    }
+
+    hr{
+        width: 50%;
+    }
+    .span_1_of_4{
+        width: 100%;
+
+    }
+
+
+    .hero-text-box h1{
+        font-size: 2.5rem;
+        margin-top: 35%;
+     }
+
+    .contact-section form{
+    margin-top: 5rem;
+    width: 100%;
+    margin: auto;
+}
+
+.portfolio-filter button{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.portfolio-section h4{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.portfolio-section .btn-load-more{
+    margin-top: 1rem;
+}
+
+
+.testimonial-section .col:nth-child(2){
+    margin-top: 0;
+
+}
+
+.contact-section .description{
+    font-size:  1.6rem;
+}
+
+.contact-section label{
+    margin-top: 2rem;
+}
+
+
+}  
